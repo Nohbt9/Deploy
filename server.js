@@ -9,6 +9,6 @@ res.sendFile(path.join(distPath,"index.html"));
 });
 
 
-app.listen(800,()=>{
+app.listen(800 || process.env.PORT,()=>{
     console.log("server started to listen on port 4500");
 });
