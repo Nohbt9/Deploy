@@ -5,8 +5,9 @@ const distPath=path.join(__dirname,"dist");
 
 app.use(express.static(distPath));
 app.get("/",(req,res)=>{
-res.send("Hello world");
+res.send("<h1>hello</h1>");
 });
+
 
 const port=800 || process.env.PORT;
 app.listen(port,()=>{
