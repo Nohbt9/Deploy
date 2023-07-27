@@ -8,7 +8,7 @@ app.get("/",(req,res)=>{
 res.send("Hello world");
 });
 
-
-app.listen(800 || process.env.PORT,()=>{
+const port=800 || process.env.PORT;
+app.listen(port,()=>{
     console.log("server started to listen on port 4500");
 });
