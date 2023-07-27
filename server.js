@@ -6,7 +6,7 @@ const distPath=path.join(__dirname,"dist");
 //app.use(express.static(distPath));
 app.get("/",(req,res)=>{
     console.log("request came");
-res.sendFile(path.join(distPath,"index"));
+    res.sendFile('index.html', { root: __dirname + '/dist' });
 });
 
 
