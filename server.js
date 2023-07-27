@@ -3,8 +3,9 @@ const path=require("path");
 const app=express();
 const distPath=path.join(__dirname,"dist");
 
-app.use(express.static(distPath));
+//app.use(express.static(distPath));
 app.get("/",(req,res)=>{
+    console.log("request came");
 res.send("<h1>hello</h1>");
 });
 
