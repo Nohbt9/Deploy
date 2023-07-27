@@ -4,7 +4,7 @@ const app=express();
 const distPath=path.join(__dirname,"dist");
 
 app.use(express.static(distPath));
-app.get("/",(req,res)=>{
+app.get("/apple",(req,res)=>{
 res.send("<h1>hello</h1>");
 });
 
